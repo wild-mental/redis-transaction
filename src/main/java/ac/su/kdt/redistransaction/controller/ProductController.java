@@ -50,7 +50,7 @@ public class ProductController {
     public ResponseEntity<ProductResponseDTO> createProduct(
         // Get the request body as ProductDTO and create a product
         @RequestBody ProductDTO productDTO
-        ) {
+    ) {
         Product product = productService.createProduct(productDTO);
         if (product == null) {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
