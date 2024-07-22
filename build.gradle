@@ -58,3 +58,7 @@ tasks.named('asciidoctor') {
     inputs.dir snippetsDir
     dependsOn test
 }
+
+bootJar {
+    archiveFileName = 'spring-redis-transaction.jar'
+}
