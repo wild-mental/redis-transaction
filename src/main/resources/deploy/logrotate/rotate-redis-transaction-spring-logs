@@ -1,0 +1,11 @@
+$LOG_PATH/spring.log {
+    daily
+    rotate 30
+    compress
+    missingok
+    notifempty
+    copytruncate
+    postrotate
+        /path/to/postrotate_script.sh
+    endscript
+}

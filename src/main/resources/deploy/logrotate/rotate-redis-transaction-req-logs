@@ -1,0 +1,10 @@
+$LOG_PATH/api-req.log {
+    size 1k
+    copytruncate
+    notifempty
+    missingok
+    sharedscripts
+    postrotate
+        /path/to/postrotate_script.sh
+    endscript
+}
